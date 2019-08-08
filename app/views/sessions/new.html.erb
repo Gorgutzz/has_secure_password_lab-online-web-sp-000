@@ -1,5 +1,9 @@
 <h1> Welcome, <%= "#{current_user}" %></h1>
 
-<p>
-  <%= link_to "View secret", '/show' %>
-</p> 
+<%= form_for(@user, url: login_path) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name%><br>
+  <%= f.label :password %>
+  <%= f.password_field :password %><br>
+  <%= f.submit "Login" %>
+<% end %>

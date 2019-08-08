@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
       redirect_to '/'
     else
       return head(:forbidden)
+    end
   end
 
 end

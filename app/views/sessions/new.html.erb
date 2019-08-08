@@ -1,4 +1,4 @@
-<h1> Welcome, <%= "#{current_user}" %></h1>
+<h1> Greetings <%= "#{current_user}" %></h1>
 
 <%= form_for(@user, url: login_path) do |f| %>
   <%= f.label :name %>
